@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ICE WORLD | Dashboard</title>
+
+    <link rel="stylesheet" href="../ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/responsive.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/animations.css">
+
+</head>
+
+<body>
+
+<div class="admin-wrapper">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>ICE WORLD</h2>
+
+            <p>Admin Panel</p>
+
+        </div>
+
+        <ul>
+
+            <li>
+
+                <a href="dashboard.html">
+
+                    🏠 Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="orders.html">
+
+                    📦 Orders
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="customers.html">
+
+                    👥 Customers
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="reports.html">
+
+                    📈 Reports
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="settings.html">
+
+                    ⚙ Settings
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <button
+                    class="btn"
+                    onclick="logoutAdmin()">
+
+                    Logout
+
+                </button>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="admin-content">
+
+        <header>
+
+            <h1>
+
+                Dashboard
+
+            </h1>
+
+            <p>
+
+                Welcome,
+
+                <strong id="adminName">
+
+                    Admin
+
+                </strong>
+
+            </p>
+
+        </header>
+
+        <br>
+
+        <!-- Dashboard Cards -->
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+
+                <h3>
+
+                    Pending Orders
+
+                </h3>
+
+                <h2 id="pendingOrders">
+
+                    0
+
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Completed Orders
+
+                </h3>
+
+                <h2 id="completedOrders">
+
+                    0
+
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Blocks Sold
+
+                </h3>
+
+                <h2 id="blocksSold">
+
+                    0
+
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Revenue
+
+                </h3>
+
+                <h2 id="revenue">
+
+                    K0
+
+                </h2>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <h2>
+
+            Recent Orders
+
+        </h2>
+
+        <br>
+
+        <div class="table-wrapper">
+
+            <table class="admin-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Order ID</th>
+
+                        <th>Customer</th>
+
+                        <th>Blocks</th>
+
+                        <th>Total</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="recentOrders">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../JS/auth.js"></script>
+
+<script src="../JS/admin.js"></script>
+
+</body>
+
+</html>
