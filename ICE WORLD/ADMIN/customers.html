@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ICE WORLD | Customers</title>
+
+    <link rel="stylesheet" href="../ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/responsive.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/animations.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            ICE WORLD ADMIN
+
+        </div>
+
+        <div>
+
+            <a href="dashboard.html" class="btn">
+
+                Dashboard
+
+            </a>
+
+            <button
+                onclick="logoutAdmin()"
+                class="btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="container">
+
+    <h1>
+
+        Customer Management
+
+    </h1>
+
+    <p class="subtitle">
+
+        View and manage your customer records.
+
+    </p>
+
+    <br>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+
+            <h3>Total Customers</h3>
+
+            <h2 id="customerCountTotal">0</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Active</h3>
+
+            <h2 id="activeCustomers">0</h2>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <input
+        type="text"
+        id="customerSearch"
+        placeholder="Search Customer"
+        class="search-input">
+
+    <br><br>
+
+    <div class="table-wrapper">
+
+        <table class="admin-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+
+                        Customer ID
+
+                    </th>
+
+                    <th>
+
+                        Name
+
+                    </th>
+
+                    <th>
+
+                        Phone
+
+                    </th>
+
+                    <th>
+
+                        Email
+
+                    </th>
+
+                    <th>
+
+                        Address
+
+                    </th>
+
+                    <th>
+
+                        Total Orders
+
+                    </th>
+
+                    <th>
+
+                        Actions
+
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="customersTable">
+
+                <!-- Customers Loaded By JavaScript -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<script src="../JS/auth.js"></script>
+
+<script src="../JS/admin.js"></script>
+
+</body>
+
+</html>

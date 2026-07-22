@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ICE WORLD | Place Order</title>
+
+    <link rel="stylesheet" href="ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="ASSETS/CSS/responsive.css">
+    <link rel="stylesheet" href="ASSETS/CSS/animations.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ICE WORLD
+        </div>
+
+        <div class="nav-actions">
+            <a href="login.html" class="btn-outline">
+                Staff Login
+            </a>
+            <a href="ICE WORLD.html" class="btn">
+                Back Home
+            </a>
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="container">
+
+    <h1>Place Your Order</h1>
+
+    <p class="subtitle">Fill in your details and we'll prepare your block ice order.</p>
+
+    <div class="order-layout">
+
+        <form id="orderForm" class="card-form">
+
+            <div class="input-group">
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter email address">
+            </div>
+
+            <div class="input-group">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" rows="3" placeholder="Enter delivery address" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="deliveryDate">Delivery Date</label>
+                <input type="date" id="deliveryDate">
+            </div>
+
+            <div class="input-group">
+                <label for="deliveryTime">Delivery Time</label>
+                <input type="time" id="deliveryTime">
+            </div>
+
+            <div class="input-group">
+                <label for="blocks">Number of Blocks</label>
+                <input type="number" id="blocks" min="1" value="1" required>
+            </div>
+
+            <div class="input-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" rows="3" placeholder="Any additional notes"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Order</button>
+
+        </form>
+
+        <div id="receiptBox" class="receipt-card" style="display:none;"></div>
+
+    </div>
+
+</section>
+
+<script src="JS/order.js"></script>
+
+</body>
+</html>

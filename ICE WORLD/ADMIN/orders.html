@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ICE WORLD | Orders</title>
+
+    <link rel="stylesheet" href="../ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/responsive.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/animations.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            ICE WORLD ADMIN
+
+        </div>
+
+        <div>
+
+            <a href="dashboard.html" class="btn">
+
+                Dashboard
+
+            </a>
+
+            <button
+                onclick="logoutAdmin()"
+                class="btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="container">
+
+    <h1>
+
+        Customer Orders
+
+    </h1>
+
+    <p class="subtitle">
+
+        Manage and track customer orders from one place.
+
+    </p>
+
+    <br>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+
+            <h3>Total Orders</h3>
+
+            <h2 id="orderCount">0</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Pending</h3>
+
+            <h2 id="pendingCount">0</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Delivered</h3>
+
+            <h2 id="deliveredCount">0</h2>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="flex-row">
+
+        <input
+            type="text"
+            id="searchOrders"
+            placeholder="Search by Order ID or Customer"
+            class="search-input">
+
+        <select id="statusFilter" class="search-input">
+
+        <option value="All">
+
+            All Orders
+
+        </option>
+
+        <option value="Pending">
+
+            Pending
+
+        </option>
+
+        <option value="Preparing">
+
+            Preparing
+
+        </option>
+
+        <option value="Delivered">
+
+            Delivered
+
+        </option>
+
+        <option value="Cancelled">
+
+            Cancelled
+
+        </option>
+
+        </select>
+
+    </div>
+
+    <br>
+
+    <div class="table-wrapper">
+
+        <table class="admin-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+
+                        Order ID
+
+                    </th>
+
+                    <th>
+
+                        Customer
+
+                    </th>
+
+                    <th>
+
+                        Phone
+
+                    </th>
+
+                    <th>
+
+                        Blocks
+
+                    </th>
+
+                    <th>
+
+                        Total
+
+                    </th>
+
+                    <th>
+
+                        Delivery Date
+
+                    </th>
+
+                    <th>
+
+                        Status
+
+                    </th>
+
+                    <th>
+
+                        Actions
+
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="ordersTable">
+
+                <!-- Orders Loaded Here -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<script src="../JS/auth.js"></script>
+
+<script src="../JS/admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+/* ==========================================================
+   ICE WORLD
+   responsive.css
+   ========================================================== */
+
+
+/* ==========================================================
+   Large Tablets
+   1200px
+========================================================== */
+
+@media screen and (max-width:1200px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   Tablets
+   992px
+========================================================== */
+
+@media screen and (max-width:992px){
+
+    /* Navigation */
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    /* Hero */
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:60px 30px;
+
+    }
+
+    .hero-content{
+
+        width:100%;
+
+    }
+
+    .hero-image{
+
+        width:100%;
+
+        margin-top:40px;
+
+    }
+
+    /* Cards */
+
+    .cards,
+
+    .dashboard-cards{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   Mobile
+   768px
+========================================================== */
+
+@media screen and (max-width:768px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .navbar{
+
+        text-align:center;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        margin-bottom:15px;
+
+    }
+
+    .cards,
+
+    .dashboard-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    input,
+
+    textarea,
+
+    select{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   Small Phones
+   576px
+========================================================== */
+
+@media screen and (max-width:576px){
+
+    .logo{
+
+        font-size:1.5rem;
+
+    }
+
+    h1{
+
+        font-size:1.8rem;
+
+    }
+
+    h2{
+
+        font-size:1.3rem;
+
+    }
+
+    .container{
+
+        width:95%;
+
+    }
+
+    .card{
+
+        padding:20px;
+
+    }
+
+    .btn{
+
+        padding:12px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   Very Small Devices
+   400px
+========================================================== */
+
+@media screen and (max-width:400px){
+
+    body{
+
+        font-size:14px;
+
+    }
+
+    h1{
+
+        font-size:1.5rem;
+
+    }
+
+    h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .navbar{
+
+        padding:15px;
+
+    }
+
+    .btn{
+
+        font-size:14px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   Landscape Phones
+========================================================== */
+
+@media screen and (max-height:500px){
+
+    .hero{
+
+        padding:30px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   Print
+========================================================== */
+
+@media print{
+
+    header,
+
+    footer,
+
+    button{
+
+        display:none;
+
+    }
+
+    body{
+
+        background:white;
+
+        color:black;
+
+    }
+
+}
